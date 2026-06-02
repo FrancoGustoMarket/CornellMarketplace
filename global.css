@@ -93,3 +93,8 @@ body {
   --left-32: 32px;
   --top-0: 0px;
 }
+.final-draft-i1 {
+  max-width: 1280px;
+  margin: 0 auto;
+  align-items: center;
+}
