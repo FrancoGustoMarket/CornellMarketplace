@@ -460,12 +460,8 @@
   min-width: var(--min-w-322);
   max-width: 535px;
 }
-.blank-line20,
 .the-marketplace-is-designed-to4 {
   line-height: var(--lh-32);
-}
-.blank-line20 {
-  font-family: var(--font-roboto);
 }
 .when-startups-outgrow4 {
   color: var(--color-firebrick-200);
@@ -475,7 +471,9 @@
   align-self: stretch;
   background-color: var(--color-white);
   overflow: hidden;
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding: var(--padding-96) 25px var(--padding-88) 23px;
   box-sizing: border-box;
   gap: var(--gap-28);
@@ -485,23 +483,21 @@
   color: var(--color-gray-100);
   font-family: var(--font-roboto);
 }
-.cards-grid,
-.clients-and-startups7,
-.clients-startups9 {
-  display: flex;
-  align-items: flex-start;
-}
+/* FIX: removed fixed height so cards can grow with content */
 .cards-grid {
   align-self: stretch;
-  height: 1016px;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
   gap: var(--gap-40) var(--gap-48);
   max-width: 100%;
 }
+/* FIX: removed fixed height, added flex column so explore button stays at bottom */
 .clients-startups9 {
-  height: var(--height-488);
+  height: auto;
   flex: 1;
   box-shadow: var(--shadow-drop-1);
   border-radius: var(--br-12);
@@ -509,7 +505,9 @@
   border: var(--border-2);
   box-sizing: border-box;
   overflow: hidden;
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
   min-width: 394.7px;
   text-align: left;
   font-size: var(--fs-24);
@@ -525,20 +523,19 @@
   flex-shrink: 0;
   object-fit: cover;
 }
-.container13,
-.heading-39 {
-  display: flex;
-  flex-direction: column;
-}
 .container13 {
   align-self: stretch;
   flex: 1;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   padding: var(--padding-24) var(--padding-32);
   position: relative;
   isolation: isolate;
 }
 .heading-39 {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: var(--padding-0) var(--padding-0) var(--padding-12);
@@ -557,6 +554,7 @@
 }
 .paragraph-margin9 {
   align-self: stretch;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -570,17 +568,18 @@
   position: relative;
   line-height: var(--lh-25_5);
 }
+/* FIX: changed from position:absolute to relative so it flows below text */
 .container-inner4 {
-  margin: 0 !important;
-  position: absolute;
-  bottom: 0;
-  left: 32px;
+  position: relative;
+  bottom: auto;
+  left: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: var(--padding-0) var(--padding-0) var(--padding-40);
+  padding: var(--padding-16) var(--padding-0) var(--padding-40);
   z-index: 2;
   flex-shrink: 0;
+  margin-top: auto;
 }
 .rectangle-parent25 {
   cursor: pointer;
@@ -600,38 +599,36 @@
   color: var(--color-white);
   text-align: left;
 }
-.clients-startups11,
-.clients-startups12 {
+.clients-startups11 {
   flex: 1;
   box-sizing: border-box;
-  align-items: flex-start;
-}
-.clients-startups11 {
   display: flex;
+  align-items: flex-start;
   padding: var(--padding-0) 2px var(--padding-0) var(--padding-0);
-  min-width: 562px;
-  max-width: 100%;
+  min-width: 340px;
+  max-width: 340px;
   text-align: left;
   font-size: var(--fs-24);
   color: var(--color-gray-100);
   font-family: var(--font-roboto);
 }
+/* FIX: removed fixed height */
 .clients-startups12 {
-  height: var(--height-488);
+  height: auto;
+  flex: 1;
   box-shadow: var(--shadow-drop-1);
   border-radius: var(--br-12);
   background-color: var(--color-white);
   border: var(--border-2);
   overflow: hidden;
-}
-.clients-startups12,
-.clients-startups13,
-.heading-312 {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
 }
+/* FIX: removed fixed height, added flex column */
 .clients-startups13 {
-  height: var(--height-488);
+  height: auto;
   flex: 1;
   box-shadow: var(--shadow-drop-1);
   border-radius: var(--br-12);
@@ -639,6 +636,8 @@
   border: var(--border-2);
   box-sizing: border-box;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   min-width: 394.7px;
   text-align: left;
@@ -647,6 +646,8 @@
   font-family: var(--font-roboto);
 }
 .heading-312 {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: var(--padding-0) var(--padding-0) var(--padding-12);
@@ -654,26 +655,27 @@
   flex-shrink: 0;
   font-size: var(--fs-24);
 }
-.container-inner7,
 .paragraph-margin12 {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
-}
-.paragraph-margin12 {
-  align-self: stretch;
-  display: flex;
-  z-index: 1;
   color: var(--color-dimgray);
 }
+/* FIX: was display:none — now visible and in flow */
 .container-inner7 {
-  margin: 0 !important;
-  position: absolute;
-  bottom: 0;
-  left: 32px;
-  display: none;
-  padding: var(--padding-0) var(--padding-0) var(--padding-40);
+  position: relative;
+  bottom: auto;
+  left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--padding-16) var(--padding-0) var(--padding-40);
   z-index: 2;
+  flex-shrink: 0;
+  margin-top: auto;
   color: var(--color-white);
 }
 .rectangle-parent28 {
@@ -685,6 +687,10 @@
   position: absolute;
   top: calc(50% - 9.5px);
   left: calc(50% - 27px);
+  font-size: var(--fs-16);
+  font-family: var(--font-roboto);
+  color: var(--color-white);
+  text-align: left;
 }
 .co-founders-group,
 .stay-in-touch6 {
@@ -709,6 +715,7 @@
   flex-wrap: wrap;
   align-content: flex-start;
   gap: 55px;
+  justify-content: center;
 }
 .co-founders10 {
   height: var(--height-418);
@@ -717,7 +724,7 @@
   border: var(--border-2);
   box-sizing: border-box;
   min-width: 355px;
-  max-width: 100%;
+  max-width: 420px;
   text-align: left;
   font-size: var(--fs-16);
   color: var(--color-gray-100);
@@ -797,7 +804,7 @@
   border: var(--border-2);
   box-sizing: border-box;
   min-width: 355px;
-  max-width: 100%;
+  max-width: 420px;
   text-align: left;
   font-size: var(--fs-18);
   color: var(--color-gray-100);
@@ -1017,6 +1024,7 @@
   display: inline-block;
   min-width: 79px;
 }
+
 @media screen and (max-width: 1200px) {
   .clients-and-startups7 {
     padding-top: var(--padding-62);
@@ -1108,7 +1116,7 @@
     line-height: var(--lh-24);
   }
   .built-by-three4 {
-    line-height: var(--lh-26);
+    max-width: 100%;
   }
   .built-by-three4,
   .follow-us4 {

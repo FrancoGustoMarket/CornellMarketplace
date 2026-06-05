@@ -4,9 +4,6 @@ body {
 }
 
 :root {
-  /* Common Style Variables */
-
-  /* Color */
   --color-black: #000;
   --color-darkslategray: #3d3d3d;
   --color-dimgray: #4f4f4f;
@@ -22,8 +19,6 @@ body {
   --color-steelblue: #005d8f;
   --color-white: #fff;
   --color-whitesmoke: #f7f7f7;
-
-  /* Gap */
   --gap-3: 3px;
   --gap-4: 4px;
   --gap-8: 8px;
@@ -37,8 +32,6 @@ body {
   --gap-28: 28px;
   --gap-40: 40px;
   --gap-48: 48px;
-
-  /* Padding */
   --padding-0: 0px;
   --padding-01: 0;
   --padding-1: 1px;
@@ -67,19 +60,13 @@ body {
   --padding-100: 100px;
   --padding-150: 150px;
   --padding-151: 151px;
-
-  /* BorderRadius */
   --br-0: 0px;
   --br-12: 12px;
   --br-48: 48px;
   --br-50: 50%;
   --br-100: 100px;
-
-  /* Font */
   --font-inherit: inherit;
   --font-roboto: Roboto;
-
-  /* FontSize */
   --fs-16: 16px;
   --fs-18: 18px;
   --fs-19: 19px;
@@ -91,19 +78,13 @@ body {
   --fs-36: 36px;
   --fs-40: 40px;
   --fs-inherit: inherit;
-
-  /* Borders */
   --border-1: 1px solid var(--color-firebrick-100);
   --border-2: 1px solid var(--color-firebrick-200);
   --border-3: 1px solid var(--color-gainsboro);
   --border-11: 1px solid var(--color-white);
   --border-12: 1px solid var(--color-white);
-
-  /* Shadows */
   --shadow-drop: 0px 8px 40px rgba(0, 0, 0, 0.22);
   --shadow-drop-1: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-  /* WidthHeights */
   --height-1: 1px;
   --height-16: 16px;
   --height-19: 19px;
@@ -160,8 +141,6 @@ body {
   --width-362: 362px;
   --width-374: 374px;
   --width-378: 378px;
-
-  /* LineHeights */
   --lh-24: 24px;
   --lh-26: 26px;
   --lh-30: 30px;
@@ -170,11 +149,8 @@ body {
   --lh-25_5: 25.5px;
   --lh-40_8: 40.8px;
   --lh-normal: normal;
-
-  /* LetterSpacings */
   --ls--0_68: -0.68px;
   --ls-normal: normal;
-
   --left-0: 0px;
   --left-32: 32px;
   --left-calc50-6: calc(50% - 6px);
@@ -184,12 +160,17 @@ body {
   --top-calc50-9_5: calc(50% - 9.5px);
 }
 
-/* Button reset — prevents browser default styles from breaking Figma-exported layouts */
 button {
   all: unset;
   box-sizing: border-box;
   cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .our-mission-partnership {
   padding-left: 8% !important;
   padding-right: 8% !important;
@@ -199,14 +180,166 @@ button {
   padding-left: 8% !important;
   padding-right: 8% !important;
 }
-.clients-startups11 {
-  max-width: 491px;
+
+.clients-and-startups7 {
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+  box-sizing: border-box !important;
 }
+
+.cards-grid {
+  height: auto !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 32px !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+  align-items: stretch !important;
+}
+
+.clients-startups9,
+.clients-startups13 {
+  flex: none !important;
+  height: auto !important;
+  width: calc(50% - 16px) !important;
+  max-width: calc(50% - 16px) !important;
+  min-width: 0 !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.clients-startups11 {
+  flex: none !important;
+  height: auto !important;
+  width: calc(50% - 16px) !important;
+  max-width: calc(50% - 16px) !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+}
+
+.clients-startups12 {
+  flex: 1 !important;
+  height: auto !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.container13 {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 !important;
+}
+
+.paragraph-margin9,
+.paragraph-margin12 {
+  flex: 1 !important;
+}
+
+.container-inner4 {
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  padding: 16px 0 0 0 !important;
+  margin: 0 !important;
+}
+
+.container-inner7 {
+  display: flex !important;
+  position: relative !important;
+  bottom: auto !important;
+  left: auto !important;
+  padding: 16px 0 0 0 !important;
+  margin: 0 !important;
+}
+
+.co-founders-group {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 24px !important;
+  padding: 0 6% !important;
+  box-sizing: border-box !important;
+}
+
+.co-founders10,
+.co-founders11 {
+  width: 380px !important;
+  max-width: 380px !important;
+  min-width: 280px !important;
+  flex-shrink: 0 !important;
+}
+
 .hamburger-menu2 {
   width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.hamburger-menu2.open {
+  max-height: 200px;
 }
 
 .buttons23 {
   width: 100% !important;
-  justify-content: center;
+  justify-content: center !important;
+}
+
+.herosection-wrapper3 {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  align-self: stretch !important;
+}
+
+.herosection6 {
+  align-items: center !important;
+}
+
+.clients-startups18,
+.clients-startups19,
+.frame-wrapper14,
+.frame-wrapper15,
+.frame-wrapper16,
+.clients-startups-wrapper5,
+.rectangle-parent45,
+.stay-in-touch-parent4,
+.co-founders16,
+.co-founders17 {
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.herosection4 {
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+  box-sizing: border-box !important;
+}
+
+.sell-in-the {
+  font-size: 16px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  white-space: nowrap !important;
+  width: max-content !important;
+}
+
+.buttons17 {
+  min-width: 220px !important;
+}
+.sell-in-the {
+  font-size: 18px !important;
+  white-space: nowrap !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: max-content !important;
+}
+
+.buttons17 {
+  min-width: 300px !important;
 }
