@@ -171,7 +171,34 @@ a {
   text-decoration: none;
 }
 
-.our-mission-partnership, .how-it-works6 {
+.herosection4 {
+  box-sizing: border-box !important;
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+}
+
+.buttons17 {
+  min-width: 300px !important;
+}
+
+.sell-in-the {
+  white-space: nowrap !important;
+  width: max-content !important;
+  font-size: 18px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+.our-mission-partnership {
+  padding-left: 8% !important;
+  padding-right: 8% !important;
+}
+
+.they-sell-they4 {
+  max-width: 100% !important;
+}
+
+.how-it-works6 {
   padding-left: 8% !important;
   padding-right: 8% !important;
 }
@@ -297,23 +324,5 @@ a {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
-}
-
-.herosection4 {
-  box-sizing: border-box !important;
-  padding-left: 3% !important;
-  padding-right: 3% !important;
-}
-
-.sell-in-the {
-  white-space: nowrap !important;
-  width: max-content !important;
-  font-size: 18px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-}
-
-.buttons17 {
-  min-width: 300px !important;
 }
 /*# sourceMappingURL=CornellMarketplace.689f5f05.css.map */

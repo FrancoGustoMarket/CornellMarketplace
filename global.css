@@ -171,9 +171,31 @@ a {
   color: inherit;
 }
 
+.herosection4 {
+  padding-left: 3% !important;
+  padding-right: 3% !important;
+  box-sizing: border-box !important;
+}
+
+.buttons17 {
+  min-width: 300px !important;
+}
+
+.sell-in-the {
+  font-size: 18px !important;
+  white-space: nowrap !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: max-content !important;
+}
+
 .our-mission-partnership {
   padding-left: 8% !important;
   padding-right: 8% !important;
+}
+
+.they-sell-they4 {
+  max-width: 100% !important;
 }
 
 .how-it-works6 {
@@ -314,32 +336,4 @@ a {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
-}
-.herosection4 {
-  padding-left: 3% !important;
-  padding-right: 3% !important;
-  box-sizing: border-box !important;
-}
-
-.sell-in-the {
-  font-size: 16px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  white-space: nowrap !important;
-  width: max-content !important;
-}
-
-.buttons17 {
-  min-width: 220px !important;
-}
-.sell-in-the {
-  font-size: 18px !important;
-  white-space: nowrap !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  width: max-content !important;
-}
-
-.buttons17 {
-  min-width: 300px !important;
 }
