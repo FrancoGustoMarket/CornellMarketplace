@@ -330,7 +330,6 @@ a {
 
 .clients-startups18,
 .clients-startups19,
-.frame-wrapper14,
 .frame-wrapper16,
 .clients-startups-wrapper5,
 .rectangle-parent45,
@@ -342,14 +341,18 @@ a {
   margin-right: auto;
 }
 
+.frame-wrapper14,
 .frame-wrapper15 {
-  padding-left: 5% !important;
-  padding-right: 5% !important;
   align-self: stretch !important;
   width: 100% !important;
   box-sizing: border-box !important;
+  padding-left: 8% !important;
+  padding-right: 5% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
+.our-mission-parent2,
 .in-partnership-with-parent2 {
   padding-left: 0 !important;
   width: 100% !important;
