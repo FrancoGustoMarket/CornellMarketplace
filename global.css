@@ -189,6 +189,11 @@ a {
   width: max-content !important;
 }
 
+.linkedin3 {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
 .our-mission-partnership {
   padding-left: 8% !important;
   padding-right: 8% !important;
@@ -326,7 +331,6 @@ a {
 .clients-startups18,
 .clients-startups19,
 .frame-wrapper14,
-.frame-wrapper15,
 .frame-wrapper16,
 .clients-startups-wrapper5,
 .rectangle-parent45,
@@ -338,12 +342,28 @@ a {
   margin-right: auto;
 }
 
-.in-partnership-with-parent2 {
-  padding-left: 0 !important;
-}
-
 .frame-wrapper15 {
-  padding-left: 0 !important;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
   align-self: stretch !important;
   width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.in-partnership-with-parent2 {
+  padding-left: 0 !important;
+  width: 100% !important;
+}
+
+.frame-parent26 {
+  align-items: center !important;
+}
+
+.rectangle-parent47,
+.rectangle-parent48 {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 16px !important;
 }
